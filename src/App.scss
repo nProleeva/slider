@@ -1,0 +1,17 @@
+.App {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  & > div {
+    flex: 0 0 50%;
+    transition: margin-left 2s ease-in-out;
+    @media (max-device-width:480px), (max-width: 767px){
+      flex-basis: 100%;
+    }
+  }
+  @media (max-device-width:480px) {
+    .form.none {
+        margin-left: -100vw;
+    }
+  }
+}

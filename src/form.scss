@@ -1,0 +1,23 @@
+.form {
+  text-align: left;
+  form {
+    display: flex;
+    justify-content: center;
+
+    textarea {
+      flex: 2 auto;
+      min-height: 100px;
+    }
+
+    input {
+      align-self: flex-end;
+    }
+  }
+  textarea,input {
+    margin:0.5rem;
+  }
+  p {
+    margin: 1rem 0.5rem;
+    cursor: default;
+  }
+}

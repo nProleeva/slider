@@ -1,0 +1,26 @@
+p {
+  font-family: monospace;
+  max-width: calc(50vw - 1rem);
+  overflow: hidden;
+  word-wrap: break-word;
+  @media (max-device-width:480px), (max-width: 767px) {
+    max-width: calc(100vw - 1rem);
+  }
+  span {
+    animation: printed-text 0s steps(20),animationLast 0s ease-in-out ;
+    display: inline-block;
+    overflow: hidden;
+    word-wrap: normal;
+  }
+}
+
+@keyframes animationLast {
+  0%,100% {
+    width: 0;
+  }
+}
+@keyframes printed-text {
+  0% {
+    width: 0;
+  }
+}
